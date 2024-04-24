@@ -1,2 +1,3 @@
 cpp/build/gauss
 cpp/build/qrgivens
+cpp/build/svd

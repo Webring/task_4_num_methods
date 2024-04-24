@@ -1,3 +1,5 @@
 *.exe
-.idea/
+.idea
+*.idea
 /julia
+examples

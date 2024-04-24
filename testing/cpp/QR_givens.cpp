@@ -2,7 +2,7 @@
 #include "libs/Eigen/Dense"
 #include "chrono"
 
-#define EPS 1e-15
+#define EPS 1e-20 // для 4 задачи поставить 1e-15
 
 
 using namespace std;
@@ -13,9 +13,15 @@ double find_error(VectorXd &x, VectorXd &x_star) {
     return (x - x_star).norm() / x_star.norm();
 }
 
+/*
+Для 4 работы
 double start_matrix_value(int i, int j) {
     if (i == j) return 100;
     return 10 + 0.1 * i - 0.3 * j;
+}*/
+
+double start_matrix_value(int i, int j) {
+    return 1.0 / (1 + 0.1 * i + 2 * j);
 }
 
 

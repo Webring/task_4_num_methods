@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  tester-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tester-image
